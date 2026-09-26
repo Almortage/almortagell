@@ -340,4 +340,1898 @@
     */
 
     .portrait::before {
-      content: "
+      content: "م";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,.04);
+      font-size: 190px;
+      font-weight: 900;
+    }
+
+    .portrait-content {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 30px;
+      background:
+        linear-gradient(
+          transparent,
+          rgba(2,6,12,.95)
+        );
+    }
+
+    .portrait-content strong {
+      display: block;
+      font-size: 22px;
+    }
+
+    .portrait-content span {
+      color: var(--gold-light);
+      font-size: 11px;
+    }
+
+    .float-card {
+      position: absolute;
+      left: -20px;
+      bottom: 35px;
+      padding: 15px 20px;
+      border: 1px solid var(--border);
+      background: rgba(8,15,26,.80);
+      backdrop-filter: blur(15px);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .float-card b {
+      display: block;
+      color: var(--gold-light);
+      font-size: 17px;
+    }
+
+    .float-card span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* =========================
+       TITLES
+    ========================= */
+
+    .section-head {
+      max-width: 720px;
+      margin-bottom: 45px;
+    }
+
+    .eyebrow {
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem,5vw,3.5rem);
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .section-text {
+      color: var(--muted);
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 55px;
+    }
+
+    .story-card {
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 110px;
+      height: fit-content;
+    }
+
+    .story-card .quote {
+      font-size: 23px;
+      font-weight: 800;
+      line-height: 1.5;
+      margin: 20px 0;
+    }
+
+    .story-card p {
+      color: var(--muted);
+    }
+
+    .signature {
+      margin-top: 25px;
+      color: var(--gold-light);
+      font-size: 23px;
+    }
+
+    .story {
+      color: #d7dde6;
+      font-size: 16px;
+    }
+
+    .story p {
+      margin-bottom: 18px;
+    }
+
+    .story strong {
+      color: var(--gold-light);
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .service {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+      transition: .35s;
+    }
+
+    .service:hover {
+      transform: translateY(-7px);
+      border-color: rgba(215,181,109,.35);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: rgba(215,181,109,.10);
+      color: var(--gold-light);
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .service h3 {
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       PORTFOLIO
+    ========================= */
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 28px;
+    }
+
+    .filter {
+      padding: 9px 16px;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      background: var(--card);
+      color: #ccd3dd;
+      cursor: pointer;
+      transition: .25s;
+    }
+
+    .filter.active,
+    .filter:hover {
+      color: #111722;
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .project {
+      min-height: 330px;
+      border-radius: 22px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid var(--border);
+      background:
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(215,181,109,.18),
+          transparent 35%
+        ),
+        linear-gradient(145deg,#17263a,#070d16);
+      transition: .35s;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+    }
+
+    .project:nth-child(2) {
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(61,110,163,.28),
+          transparent 38%
+        ),
+        linear-gradient(145deg,#16283d,#070d16);
+    }
+
+    .project:nth-child(3) {
+      background:
+        radial-gradient(
+          circle at 50% 30%,
+          rgba(215,181,109,.16),
+          transparent 35%
+        ),
+        linear-gradient(145deg,#302516,#080b10);
+    }
+
+    .project:nth-child(4) {
+      background:
+        radial-gradient(
+          circle at 30% 25%,
+          rgba(88,145,105,.20),
+          transparent 35%
+        ),
+        linear-gradient(145deg,#162a24,#070d16);
+    }
+
+    .project:nth-child(5) {
+      background:
+        radial-gradient(
+          circle at 75% 25%,
+          rgba(133,84,155,.22),
+          transparent 35%
+        ),
+        linear-gradient(145deg,#261b30,#070d16);
+    }
+
+    .project:nth-child(6) {
+      background:
+        radial-gradient(
+          circle at 30% 20%,
+          rgba(190,164,100,.20),
+          transparent 35%
+        ),
+        linear-gradient(145deg,#2a2419,#070d16);
+    }
+
+    .project::before {
+      content: "PROJECT";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,.04);
+      font-size: 55px;
+      font-weight: 900;
+    }
+
+    .project-info {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 24px;
+      background: linear-gradient(
+        transparent,
+        rgba(2,5,10,.95)
+      );
+    }
+
+    .project-info span {
+      color: var(--gold-light);
+      font-size: 10px;
+    }
+
+    .project-info h3 {
+      font-size: 17px;
+    }
+
+    .project.hide {
+      display: none;
+    }
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .skill {
+      padding: 22px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 18px;
+    }
+
+    .skill-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .skill-top span:last-child {
+      color: var(--gold-light);
+      font-weight: 800;
+    }
+
+    .bar {
+      height: 6px;
+      background: rgba(255,255,255,.08);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .bar i {
+      display: block;
+      height: 100%;
+      border-radius: 20px;
+      background: linear-gradient(
+        90deg,
+        var(--gold),
+        var(--gold-light)
+      );
+    }
+
+    /* =========================
+       VISION
+    ========================= */
+
+    .vision {
+      padding: 70px 45px;
+      border: 1px solid rgba(215,181,109,.22);
+      border-radius: 30px;
+      background:
+        radial-gradient(
+          circle at 80% 0%,
+          rgba(215,181,109,.12),
+          transparent 35%
+        ),
+        rgba(255,255,255,.04);
+      text-align: center;
+    }
+
+    .vision h2 {
+      font-size: clamp(2rem,5vw,4rem);
+      margin-bottom: 15px;
+    }
+
+    .vision p {
+      color: var(--muted);
+      max-width: 750px;
+      margin: 0 auto 25px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 25px;
+    }
+
+    .contact-card,
+    .contact-form {
+      padding: 30px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: var(--radius);
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 15px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-item:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-item .icon {
+      width: 45px;
+      min-width: 45px;
+      height: 45px;
+      margin: 0;
+    }
+
+    .contact-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field label {
+      color: #d2d8e0;
+      font-size: 12px;
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+      width: 100%;
+      padding: 12px 14px;
+      color: white;
+      background: rgba(0,0,0,.20);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      outline: none;
+    }
+
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus {
+      border-color: rgba(215,181,109,.6);
+    }
+
+    .field textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .field select option {
+      background: #0b1420;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 9px;
+    }
+
+    .socials a {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      transition: .25s;
+    }
+
+    .socials a:hover {
+      color: var(--gold-light);
+      border-color: rgba(215,181,109,.5);
+    }
+
+    /* =========================
+       ANIMATION
+    ========================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: .7s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: none;
+    }
+
+    .to-top {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      width: 45px;
+      height: 45px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: rgba(7,13,22,.85);
+      color: var(--gold-light);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: .3s;
+      z-index: 900;
+    }
+
+    .to-top.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 78px;
+        right: 4%;
+        left: 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 18px;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: rgba(7,13,22,.97);
+        backdrop-filter: blur(18px);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        text-align: center;
+      }
+
+      .hero-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-visual {
+        margin-top: 20px;
+      }
+
+      .story-card {
+        position: static;
+      }
+
+      .services,
+      .projects {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .section {
+        padding: 75px 0;
+      }
+
+      .hero h1 {
+        font-size: 3.3rem;
+      }
+
+      .services,
+      .projects,
+      .skills-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .field.full {
+        grid-column: auto;
+      }
+
+      .stats {
+        gap: 7px;
+      }
+
+      .stat {
+        padding: 13px 8px;
+      }
+
+      .stat b {
+        font-size: 19px;
+      }
+
+      .portrait {
+        width: 88vw;
+      }
+
+      .float-card {
+        left: 0;
+        bottom: 20px;
+      }
+
+      .vision {
+        padding: 45px 22px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header id="header">
+
+  <div class="container nav">
+
+    <a href="#home" class="logo">
+
+      <span class="logo-mark">م</span>
+
+      <span class="logo-text">
+        <strong>محمد عبدالجواد</strong>
+        <small>المرتجل — Creative Designer</small>
+      </span>
+
+    </a>
+
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="فتح القائمة">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+
+      <a href="#home">الرئيسية</a>
+
+      <a href="#about">قصتي</a>
+
+      <a href="#services">الخدمات</a>
+
+      <a href="#projects">الأعمال</a>
+
+      <a href="#skills">المهارات</a>
+
+      <a href="#contact">تواصل معي</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
+
+    <div class="hero-copy reveal">
+
+      <div class="hero-kicker">
+        مصمم جرافيك • مؤسس مكتب المرتجل للدعاية والإعلان
+      </div>
+
+      <h1>
+        محمد عبدالجواد
+        <span>«المرتجل»</span>
+      </h1>
+
+      <p class="hero-sub">
+        أحوّل الأفكار إلى تصاميم تصنع حضورًا.
+      </p>
+
+      <p class="hero-desc">
+        أساعد الأفراد والمؤسسات والعلامات التجارية على تحويل أفكارهم
+        إلى رسائل بصرية واضحة وجذابة واحترافية، تجمع بين الإبداع
+        والدقة وسرعة التنفيذ.
+      </p>
+
+      <div class="actions">
+
+        <a href="#projects" class="btn btn-primary">
+          استكشف أعمالي ↗
+        </a>
+
+        <a href="#contact" class="btn btn-ghost">
+          ابدأ مشروعك معي
+        </a>
+
+      </div>
+
+      <div class="stats">
+
+        <div class="stat">
+          <b>2023</b>
+          <span>بداية الرحلة الحقيقية</span>
+        </div>
+
+        <div class="stat">
+          <b>3+</b>
+          <span>أدوات تصميم رئيسية</span>
+        </div>
+
+        <div class="stat">
+          <b>90%</b>
+          <span>تقييم ذاتي للمهارة</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-visual reveal">
+
+      <div class="portrait">
+
+        <div class="portrait-content">
+
+          <strong>
+            المرتجل
+          </strong>
+
+          <span>
+            GRAPHIC DESIGNER & CREATIVE DIRECTOR
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="float-card">
+
+        <b>
+          IDEA → DESIGN
+        </b>
+
+        <span>
+          من الفكرة إلى حضور بصري
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section" id="about">
+
+  <div class="container about-grid">
+
+    <div class="story-card reveal">
+
+      <div class="eyebrow">
+        قصتي
+      </div>
+
+      <div class="quote">
+        «بدأت بفكرة… وما زلت أصنع مستقبلها
+        تصميمًا بعد تصميم.»
+      </div>
+
+      <p>
+        الإبداع بالنسبة لي ليس مجرد شكل جميل؛
+        بل طريقة لفهم الفكرة وإيصالها.
+      </p>
+
+      <div class="signature">
+        Almortagel
+      </div>
+
+    </div>
+
+
+    <div class="story reveal">
+
+      <div class="section-head">
+
+        <div class="eyebrow">
+          من أنا؟
+        </div>
+
+        <h2 class="section-title">
+          رحلة بدأت بالفضول وتحولت إلى شغف.
+        </h2>
+
+      </div>
+
+      <p>
+        أنا
+        <strong>
+          محمد عبدالجواد، المعروف بـ «المرتجل»
+        </strong>
+        ، مصمم جرافيك ومؤسس
+        <strong>
+          مكتب المرتجل للدعاية والإعلان
+        </strong>.
+      </p>
+
+      <p>
+        لم تبدأ قصتي مع التصميم لأنني كنت أبحث فقط
+        عن صناعة صور جميلة، بل بدأت من فضول تجاه
+        الصورة والكلمة وطريقة تقديم الفكرة للناس.
+      </p>
+
+      <p>
+        في عام
+        <strong>2023</strong>
+        بدأت رحلتي الحقيقية في مجال التصميم والإعلان.
+        تعلمت من الدورات والدراسة والتعلم الذاتي،
+        ومن ساعات طويلة من التطبيق والمحاولة.
+      </p>
+
+      <p>
+        ومع الوقت اكتشفت أن التصميم بالنسبة لي
+        ليس مجرد برنامج أو أدوات، بل
+        <strong>
+          لغة أعبّر بها عن الأفكار.
+        </strong>
+      </p>
+
+      <p>
+        اليوم أتعامل مع كل مشروع باعتباره قصة جديدة.
+        أبدأ بفهم فكرة العميل وهدفه، ثم أبحث عن
+        الطريقة التي تجعل الرسالة تصل بوضوح وتترك
+        أثرًا بصريًا مميزًا.
+      </p>
+
+      <p>
+        طموحي أن أواصل التطور وأن أبني
+        <strong>
+          مكتب المرتجل للدعاية والإعلان
+        </strong>
+        ليصبح وكالة دعاية وإعلان متكاملة تقدم
+        حلولًا إبداعية من الفكرة إلى التنفيذ.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section" id="services">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <div class="eyebrow">
+        ماذا أقدم؟
+      </div>
+
+      <h2 class="section-title">
+        حلول بصرية مصممة حول فكرتك.
+      </h2>
+
+      <p class="section-text">
+        كل مشروع له شخصية مختلفة، لذلك أبحث عن
+        الحل البصري الذي يناسب هدفه وجمهوره.
+      </p>
+
+    </div>
+
+
+    <div class="services">
+
+      <article class="service reveal">
+
+        <div class="icon">✦</div>
+
+        <h3>
+          الهوية البصرية
+        </h3>
+
+        <p>
+          شعارات وهوية متكاملة وعناصر بصرية تمنح
+          العلامة شخصية واضحة ومميزة.
+        </p>
+
+      </article>
+
+
+      <article class="service reveal">
+
+        <div class="icon">◈</div>
+
+        <h3>
+          تصميم الإعلانات
+        </h3>
+
+        <p>
+          تصميمات إعلانية للسوشيال ميديا والحملات
+          بأسلوب جذاب واحترافي.
+        </p>
+
+      </article>
+
+
+      <article class="service reveal">
+
+        <div class="icon">▣</div>
+
+        <h3>
+          تصميم البوسترات
+        </h3>
+
+        <p>
+          بوسترات رياضية وجامعية وتجارية وإسلامية
+          بتكوين بصري قوي.
+        </p>
+
+      </article>
+
+
+      <article class="service reveal">
+
+        <div class="icon">◎</div>
+
+        <h3>
+          السوشيال ميديا
+        </h3>
+
+        <p>
+          محتوى بصري متناسق يساعد العلامة على
+          الظهور بصورة احترافية.
+        </p>
+
+      </article>
+
+
+      <article class="service reveal">
+
+        <div class="icon">◆</div>
+
+        <h3>
+          التصميم ثلاثي الأبعاد
+        </h3>
+
+        <p>
+          تصميمات 3D تجمع بين الفخامة والواقعية
+          والهوية البصرية.
+        </p>
+
+      </article>
+
+
+      <article class="service reveal">
+
+        <div class="icon">✎</div>
+
+        <h3>
+          المطبوعات
+        </h3>
+
+        <p>
+          بنرات وفلاير وبروشورات وكروت شخصية
+          ومواد دعائية للطباعة.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PORTFOLIO
+========================= -->
+
+<section class="section" id="projects">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <div class="eyebrow">
+        PORTFOLIO
+      </div>
+
+      <h2 class="section-title">
+        أعمال مختارة.
+      </h2>
+
+      <p class="section-text">
+        استبدل البطاقات بصور مشاريعك الحقيقية
+        عندما تبدأ بإضافة أعمالك.
+      </p>
+
+    </div>
+
+
+    <div class="filters reveal">
+
+      <button
+        class="filter active"
+        data-filter="all">
+        الكل
+      </button>
+
+      <button
+        class="filter"
+        data-filter="commercial">
+        تجاري
+      </button>
+
+      <button
+        class="filter"
+        data-filter="sports">
+        رياضي
+      </button>
+
+      <button
+        class="filter"
+        data-filter="university">
+        جامعي
+      </button>
+
+      <button
+        class="filter"
+        data-filter="scout">
+        كشفي
+      </button>
+
+      <button
+        class="filter"
+        data-filter="islamic">
+        إسلامي
+      </button>
+
+    </div>
+
+
+    <div class="projects">
+
+      <article
+        class="project reveal"
+        data-category="university">
+
+        <div class="project-info">
+
+          <span>
+            UNIVERSITY DESIGN
+          </span>
+
+          <h3>
+            تصميمات جامعية
+          </h3>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="project reveal"
+        data-category="sports">
+
+        <div class="project-info">
+
+          <span>
+            SPORTS DESIGN
+          </span>
+
+          <h3>
+            إعلان رياضي احترافي
+          </h3>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="project reveal"
+        data-category="commercial">
+
+        <div class="project-info">
+
+          <span>
+            BRANDING
+          </span>
+
+          <h3>
+            قصر البن — هوية تجارية
+          </h3>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="project reveal"
+        data-category="scout">
+
+        <div class="project-info">
+
+          <span>
+            SCOUTING
+          </span>
+
+          <h3>
+            تصميمات كشفية وبحرية
+          </h3>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="project reveal"
+        data-category="islamic">
+
+        <div class="project-info">
+
+          <span>
+            ISLAMIC DESIGN
+          </span>
+
+          <h3>
+            بوستر إسلامي فاخر
+          </h3>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="project reveal"
+        data-category="commercial">
+
+        <div class="project-info">
+
+          <span>
+            ADVERTISING
+          </span>
+
+          <h3>
+            حملة إعلانية للسوشيال ميديا
+          </h3>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="section" id="skills">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <div class="eyebrow">
+        SKILLS
+      </div>
+
+      <h2 class="section-title">
+        أدواتي ومهاراتي.
+      </h2>
+
+      <p class="section-text">
+        أطور أدواتي باستمرار، لأن المصمم الجيد
+        يتوقف عن التعلم فقط عندما يتوقف عن التطور.
+      </p>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+      <div class="skill reveal">
+
+        <div class="skill-top">
+          <span>Adobe Photoshop</span>
+          <span>90%</span>
+        </div>
+
+        <div class="bar">
+          <i style="width:90%"></i>
+        </div>
+
+      </div>
+
+
+      <div class="skill reveal">
+
+        <div class="skill-top">
+          <span>Adobe Illustrator</span>
+          <span>85%</span>
+        </div>
+
+        <div class="bar">
+          <i style="width:85%"></i>
+        </div>
+
+      </div>
+
+
+      <div class="skill reveal">
+
+        <div class="skill-top">
+          <span>Canva</span>
+          <span>90%</span>
+        </div>
+
+        <div class="bar">
+          <i style="width:90%"></i>
+        </div>
+
+      </div>
+
+
+      <div class="skill reveal">
+
+        <div class="skill-top">
+          <span>Visual Identity</span>
+          <span>88%</span>
+        </div>
+
+        <div class="bar">
+          <i style="width:88%"></i>
+        </div>
+
+      </div>
+
+
+      <div class="skill reveal">
+
+        <div class="skill-top">
+          <span>Social Media Design</span>
+          <span>92%</span>
+        </div>
+
+        <div class="bar">
+          <i style="width:92%"></i>
+        </div>
+
+      </div>
+
+
+      <div class="skill reveal">
+
+        <div class="skill-top">
+          <span>Creative Direction</span>
+          <span>85%</span>
+        </div>
+
+        <div class="bar">
+          <i style="width:85%"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     VISION
+========================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="vision reveal">
+
+      <div class="eyebrow">
+        الرؤية
+      </div>
+
+      <h2>
+        من مكتب صغير إلى وكالة متكاملة.
+      </h2>
+
+      <p>
+        أطمح إلى بناء اسم يرتبط بالإبداع والدقة
+        وسرعة التنفيذ، وتطوير مكتب المرتجل للدعاية
+        والإعلان ليقدم حلولًا متكاملة في التصميم
+        والإعلان والهوية البصرية.
+      </p>
+
+      <a
+        href="#contact"
+        class="btn btn-primary">
+        لنتحدث عن مشروعك
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section" id="contact">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <div class="eyebrow">
+        تواصل معي
+      </div>
+
+      <h2 class="section-title">
+        لديك فكرة؟ دعنا نحولها إلى حضور.
+      </h2>
+
+      <p class="section-text">
+        أرسل تفاصيل مشروعك وسأكون سعيدًا بالتعرف
+        على فكرتك.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-card reveal">
+
+        <div class="contact-item">
+
+          <div class="icon">✉</div>
+
+          <div>
+            <span>البريد الإلكتروني</span>
+
+            <a href="mailto:aljoker2089@email.com">
+              aljoker2089@email.com
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="icon">☎</div>
+
+          <div>
+
+            <span>الهاتف</span>
+
+            <a href="tel:+201557303088">
+              +201557303088
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="icon">⌖</div>
+
+          <div>
+
+            <span>الموقع</span>
+
+            <strong>
+              بني سويف — مصر
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="icon">◉</div>
+
+          <div>
+
+            <span>العلامة</span>
+
+            <strong>
+              مكتب المرتجل للدعاية والإعلان
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <form
+        class="contact-form reveal"
+        id="contactForm">
+
+        <div class="form-grid">
+
+          <div class="field">
+
+            <label for="name">
+              الاسم
+            </label>
+
+            <input
+              id="name"
+              type="text"
+              placeholder="اكتب اسمك"
+              required>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="email">
+              البريد الإلكتروني
+            </label>
+
+            <input
+              id="email"
+              type="email"
+              placeholder="name@example.com"
+              required>
+
+          </div>
+
+
+          <div class="field full">
+
+            <label for="service">
+              الخدمة المطلوبة
+            </label>
+
+            <select id="service">
+
+              <option>
+                تصميم هوية بصرية
+              </option>
+
+              <option>
+                تصميم إعلان
+              </option>
+
+              <option>
+                تصميم بوستر
+              </option>
+
+              <option>
+                تصميم سوشيال ميديا
+              </option>
+
+              <option>
+                تصميم 3D
+              </option>
+
+              <option>
+                خدمة أخرى
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field full">
+
+            <label for="message">
+              رسالتك
+            </label>
+
+            <textarea
+              id="message"
+              placeholder="حدثني عن فكرتك أو مشروعك..."
+              required></textarea>
+
+          </div>
+
+
+          <div class="field full">
+
+            <button
+              class="btn btn-primary"
+              type="submit">
+
+              إرسال الطلب ↗
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+
+      ©
+      <span id="year"></span>
+
+      محمد عبدالجواد «المرتجل»
+      —
+      مكتب المرتجل للدعاية والإعلان
+
+    </div>
+
+
+    <div class="socials">
+
+      <!-- استبدل # بروابط حساباتك -->
+
+      <a
+        href=""
+        aria-label="Facebook">
+        f
+      </a>
+
+      <a
+        href="#"
+        aria-label="Instagram">
+        ◎
+      </a>
+
+      <a
+        href="@almortagel"
+        aria-label="WhatsApp">
+        ◔
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<button
+  class="to-top"
+  id="toTop"
+  aria-label="العودة للأعلى">
+
+  ↑
+
+</button>
+
+
+<script>
+
+  /* =========================
+     HEADER
+  ========================= */
+
+  const header =
+    document.getElementById("header");
+
+  const menuBtn =
+    document.getElementById("menuBtn");
+
+  const navLinks =
+    document.getElementById("navLinks");
+
+  const toTop =
+    document.getElementById("toTop");
+
+
+  window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 30) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+
+    if (window.scrollY > 500) {
+      toTop.classList.add("show");
+    } else {
+      toTop.classList.remove("show");
+    }
+
+  });
+
+
+  /* =========================
+     MOBILE MENU
+  ========================= */
+
+  menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("open");
+
+  });
+
+
+  document
+    .querySelectorAll(".nav-links a")
+    .forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navLinks.classList.remove("open");
+
+      });
+
+    });
+
+
+  /* =========================
+     BACK TO TOP
+  ========================= */
+
+  toTop.addEventListener("click", () => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+  });
+
+
+  /* =========================
+     SCROLL ANIMATION
+  ========================= */
+
+  const observer =
+    new IntersectionObserver(
+      entries => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+          }
+
+        });
+
+      },
+      {
+        threshold: .12
+      }
+    );
+
+
+  document
+    .querySelectorAll(".reveal")
+    .forEach(element => {
+
+      observer.observe(element);
+
+    });
+
+
+  /* =========================
+     PORTFOLIO FILTER
+  ========================= */
+
+  const filters =
+    document.querySelectorAll(".filter");
+
+  const projects =
+    document.querySelectorAll(".project");
+
+
+  filters.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+      filters.forEach(item => {
+        item.classList.remove("active");
+      });
+
+      button.classList.add("active");
+
+      const filter =
+        button.dataset.filter;
+
+
+      projects.forEach(project => {
+
+        if (
+          filter === "all" ||
+          project.dataset.category === filter
+        ) {
+
+          project.classList.remove("hide");
+
+        } else {
+
+          project.classList.add("hide");
+
+        }
+
+      });
+
+    });
+
+  });
+
+
+  /* =========================
+     CURRENT YEAR
+  ========================= */
+
+  document.getElementById("year")
+    .textContent =
+    new Date().getFullYear();
+
+
+  /* =========================
+     CONTACT FORM
+  ========================= */
+
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", event => {
+
+      event.preventDefault();
+
+      const name =
+        document.getElementById("name")
+          .value.trim();
+
+      const email =
+        document.getElementById("email")
+          .value.trim();
+
+      const service =
+        document.getElementById("service")
+          .value;
+
+      const message =
+        document.getElementById("message")
+          .value.trim();
+
+
+      const subject =
+        encodeURIComponent(
+          "طلب تصميم جديد من " + name
+        );
+
+
+      const body =
+        encodeURIComponent(
+          "الاسم: " + name +
+          "\nالبريد: " + email +
+          "\nالخدمة: " + service +
+          "\n\nتفاصيل المشروع:\n" +
+          message
+        );
+
+
+      /*
+        غيّر البريد التالي إلى بريدك الحقيقي
+      */
+
+      window.location.href =
+        "mailto:aljoker2089@email.com" +
+        "?subject=" +
+        subject +
+        "&body=" +
+        body;
+
+    });
+
+</script>
+
+</body>
+</html>
