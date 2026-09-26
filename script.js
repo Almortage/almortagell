@@ -161,7 +161,7 @@ contactForm.addEventListener("submit", event => {
   }
 
   // غيّر البريد هنا إلى بريدك الحقيقي.
-  const receiver = "your@email.com";
+  const receiver = "aljoker2089@email.com";
   const subject = `طلب مشروع جديد من ${name}`;
   const body =
 `الاسم: ${name}
